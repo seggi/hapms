@@ -40,11 +40,7 @@ function CheckRequestForm() {
                 result.data.map((item) => {
                     setGetContacte(item)
                 })
-                // console.log(getcontacte)
-                // for(let item in result.data) {
-                //     setGetContacte(result.data[item].onhold)
-                //     setGetPickedDate(result.data[item].date)
-                // }
+              
             }
             else if (result.error) {
                 alert(result.error);
