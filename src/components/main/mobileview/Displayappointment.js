@@ -9,7 +9,6 @@ const  RetrieveDoctorsList = (props) => {
         <>
              <div className="cart__box">
                 <div className="cart__box-left">
-                    {console.log(props.picture, '////?')}
                    {props.picture !== undefined && props.picture !== null
                                 ?
                                 <img src={`images/${props.picture}`}/>
@@ -48,20 +47,6 @@ function DisplayAppointment() {
                             return RetrieveDoctorsList(item)
                        })
                    }
-
-                    {/* <div className="cart__box">
-                        <div className="cart__box-left">
-                            <img src="images/doctors.png" />
-                        </div>
-                        <div className="cart__box-right">
-                            <span>Doctor</span>
-                            <h3>Free Time</h3>
-                            <span>Tuesday Mar 25, 2021</span>
-                            <span>Thursday Mar 25, 2021</span>
-                            <span>Sunday Mar 25, 2021</span>
-                            <span>Tuesday Mar 25, 2021</span>
-                        </div>
-                    </div> */}
                 </div>
             </div>
         </>
