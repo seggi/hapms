@@ -1,0 +1,49 @@
+.login__box {
+    padding: 8px;
+}
+
+.login__box-content {
+    width: 30%;
+    margin: 5% auto;
+    padding-bottom: 55px;
+    border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+.login__box-content form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login__box-content form span {
+    font-size: 18px;
+    font-weight: 300px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.login__box-content form input[type="text"], input[type="password"] {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 12px;
+}
+
+.login__box-content form input[type="submit"] {
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 12px;
+    margin-top: 48px;
+    background: dodgerblue;
+    border-radius: 4px;
+    border: 1px solid dodgerblue;
+}
+
+.login__box-content form input[type="submit"]:hover {
+    cursor: pointer;
+    border: 1px solid rgb(125, 181, 236);
+}

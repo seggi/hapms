@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+
+.main__content-home {
+    top: 80px;
+    width: 100%;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.top {
+    padding: 25px; 
+    border-bottom: 1px solid black;
+    background: #041b27;
+}
+
+.bottom {
+    padding: 25px; 
+    background: #fff;
+}
+
+.row__leftside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 55px;
+}
+
+
+.row__leftside h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Patrick Hand SC', cursive;
+    margin-top: 60px;
+}
+
+.row__leftside h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: 300;
+    font-family: 'Patrick Hand SC', cursive;
+    margin-top: 30px;
+}
+
+.row_rightside {
+    padding: 15px;
+    margin-left: 150px;
+    margin-top: 100px;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.row_rightside img {
+    min-width: 60%;
+    
+}
+
+.aboutus {
+    width: 100%;
+    justify-content: space-between;
+    background: #141a1d;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-about {
+    width: 30%;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-contacte {
+    width: 30%;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-about  {
+    width: 30%;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-about h3{
+    color: #333;
+    text-decoration: underline;
+}
+
+.middle-contacte h3{
+    color: #333;
+    text-decoration: underline;
+}
+
+.right-about h3{
+    color: #333;
+    text-decoration: underline;
+}
+
+.form__box {
+    width: 500px;
+    padding: 8px;
+}
+
+.form__box form {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    margin-top: -20px;
+}
+
+.form__box form span {
+    font-size: 18px;
+    font-weight: 300px;
+    margin-top: 10px;
+}
+
+.form__box form input[type="text"], input[type="date"], input[type="time"] {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 12px;
+}
+
+.form__box form input[type="submit"] {
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 12px;
+    margin-top: 25px;
+    background: dodgerblue;
+    border-radius: 4px;
+    border: 1px solid dodgerblue;
+}
+
+.form__box form input[type="submit"]:hover {
+    cursor: pointer;
+    border: 1px solid rgb(125, 181, 236);
+}
+
+.form__box form select {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 12px;
+}
+
+
+
+@media only screen and (max-width: 720px) {
+    .main__content-home {
+        top: 80px;
+        width: 100%;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .main_content-home {
+        top: 80px;
+        width: 100%;
+        font-weight: 600;
+        box-sizing: border-box;
+        padding: 16px;
+    }
+
+    .top {
+        width: 100%;
+        padding: 8px;
+        border-bottom: 1px solid black;
+        background: #041b27;
+        box-sizing: border-box;
+    }
+
+    .bottom {
+        width: 100%;
+        padding: 8px;
+        border-bottom: 1px solid black;
+        /* background: #041b27; */
+        background: #fff;
+        box-sizing: border-box;
+    }
+    
+    .row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        /* background: chocolate; */
+    }
+
+    .row__leftside {
+        width: 100%;
+        display: block;
+        margin-left: 0;
+        /* background: chartreuse; */
+        box-sizing: border-box;
+    }
+    
+    .row__leftside h1 {
+        color: white;
+        font-size: 40px;
+        font-weight: 900;
+        font-family: 'Patrick Hand SC', cursive;
+        margin-top: 0px;
+    }
+    
+    .row__leftside h2 {
+        color: white;
+        font-size: 28px;
+        font-weight: 300;
+        font-family: 'Patrick Hand SC', cursive;
+        margin-top: 30px;
+    }
+    
+    .row_rightside {
+        padding: 15px;
+        margin-left: 0;
+        margin-top: 100px;
+        box-sizing: border-box;
+    }
+    
+    .row_rightside img {
+        min-width: 300px;
+        
+    }
+
+    .aboutus {
+        width: 100%;
+        justify-content: space-between;
+        background: #141a1d;
+        display: block;
+        flex-direction: column;
+    }
+
+    .left-about {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .middle-contacte {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    
+    .right-about {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+}
+
+
+
+

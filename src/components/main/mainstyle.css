@@ -1,0 +1,145 @@
+
+.leftside {
+    display: flex;
+
+}
+
+.rightside {
+    display: flex;
+}
+
+/* .sidebar {
+    display: none;
+    top: 80px;
+    background: #102a36;
+} */
+
+
+.rightside {
+    display: flex;
+}
+.sidebar {
+    display: none;
+}
+
+.side-bar {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .rightside {
+        display: none;
+    }
+    .sidebar {
+        display: flex;
+        flex-direction: row;
+
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .rightside {
+        display: none;
+    }
+
+    .sidebar {
+        display: flex;
+    }
+
+    .side-bar {
+        display: flex;
+    }
+}
+
+
+/* @media only screen and (min-width: 980px) {
+    .rightside {
+        display: flex;
+    }
+    .sidebar {
+        display: none;
+    }
+
+    .side-bar {
+        display: none;
+    }
+    
+} */
+
+
+/* Admin side-bar */
+
+/* .admin_sidebar {
+    top: 80;
+} */
+
+li {
+    list-style: none;
+}
+
+.admin_sidebar.sidebar-menu .item {
+    width: 250px;
+    overflow: hidden;
+    list-style: none;
+}
+
+.admin_sidebar .sidebar-menu .item .menu-btn {
+    display: block;
+    color: #fff;
+    position: relative;
+    padding: 25px 20px;
+    transition: 0.3;
+    text-decoration: none;
+    transition-property: color;
+}
+
+.admin_sidebar .sidebar-menu .item .menu-btn:hover {
+    color: #4CCEE8;
+}
+ 
+.admin_sidebar .sidebar-menu .item .menu-btn label {
+    margin-right: 20px;
+}
+
+.admin_sidebar .sidebar-menu .item .menu-btn .drop-down {
+    float: right;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.admin_sidebar .sidebar-menu .item .sub-menu {
+    background: #3498DB;
+    overflow: hidden;
+    transition: 0.3s;
+    max-height: 0;
+    transition-property: background, max-height;
+}
+
+.admin_sidebar .sidebar-menu .item .sub-menu .link-a{
+    display: block;
+    position: relative;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 15px;
+    padding: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid #8FC5E9;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+.sidebar .sidebar-menu .item .sub-menu .link-a:hover {
+    background: #55B1F0;
+}
+
+.sidebar .sidebar-menu .item .sub-menu label {
+    padding-right: 20px;
+    font-size: 10px;
+}
+
+.sidebar .sidebar-menu .item:target .sub-menu {
+    max-height: 500px;
+}
+

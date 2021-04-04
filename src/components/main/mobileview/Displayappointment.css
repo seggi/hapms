@@ -1,0 +1,47 @@
+.displaydoctors__box {
+    background: #041b27;
+    padding: 16px;
+    border-bottom: 1px solid #fff;
+}
+
+.displaydoctors__box-inner {
+    display: flex;
+    flex-direction: row;
+}
+
+.cart__box {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    margin: 5px;
+    background: white;
+    border-radius: 4px;
+}
+
+.cart__box-left {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 1px solid #76838a;
+    border-radius: 8px;
+    text-align: center;
+    align-content: center;
+}
+
+.cart__box-left img {
+    width: 100px;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+.cart__box-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart__box-right span {
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 10px;
+}
