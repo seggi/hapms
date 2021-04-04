@@ -27,7 +27,6 @@ function Responded() {
         })
         .then(resp => resp.json())
         .then(result => {
-            console.log(result.data, '///')
             if (result.data){
                 
                 let getcollecttable = result.data.map((item, index) => {
@@ -75,9 +74,6 @@ function Responded() {
             style: {
                 textAlign: "center",
             },
-            // width: 100,
-            // maxWidth: 100,
-            // minWidth: 100
         },
 
         { 
