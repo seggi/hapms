@@ -22,48 +22,6 @@ GET_REGISTER = RegisterDoctor()
 
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 
-# @auth.route('/')
-# def index():
-#     return auth.send_static_file('index.html')
-
-# # Register Doctor
-# @auth.route('/login', methods=['GET', 'POST'])
-# def login():
-#     if not request.is_json:
-#         return jsonify(msg="Missing JSON in request"), 400
-    
-#     # The user will login with username
-#     username = request.json.get('username', None)
-#     password = request.json.get("password", None)
-
-#     if username != None and password != None:
-#         user = NkRegisterDoctor.query.filter_by(email=username).first()
-
-#         if not user or not check_password_hash(user.passwordhash, password):
-#             return jsonify(error="Please check your login details and try again."), 400
-
-#         else:
-#             # Get admin user
-#             # if user:
-#             access = {
-#                 'accessToken': create_access_token(
-#                     identity = [{
-#                         'id': user.id, 'username': user.username
-#                     }]
-#                 ),
-
-#                 'refreshToken': create_refresh_token(
-#                     identity=[
-#                         {
-#                             'id': user.id, 'username': username
-#                         }
-#                     ]
-#                 )
-#             }
-#             return jsonify(accessToken=access)
-
-#     return jsonify(error="You are not login")
-
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
@@ -84,8 +42,6 @@ def login():
             return jsonify(error="Please check your login details and try again."), 400
 
         else:
-            # Get admin user
-            # if user.is_admin == True:
             access = {
                 'accessToken': create_access_token(
                     identity=[{'id': user.id, 'username': username }]),
@@ -93,18 +49,6 @@ def login():
                     identity=[{'id': user.id, 'username': user.username }])
             }
             return jsonify(access), 200
-            # # Get public users 
-            # elif user.is_public == True:
-            #     getempuser = EXTEND_REG.retrieveUserEmpBusiness(user.id)['businesscategory']       
-            #     access = {
-            #         'accessToken': create_access_token(
-            #             identity=[{'id': user.id, 'username': username, 
-            #                     'company': getempuser, 'authpub': user.is_public }]),
-            #         'refreshToken': create_refresh_token(
-            #             identity=[{'id': user.id, 'username': user.username, 
-            #                     'company': getempuser, 'authpub': user.is_public }])
-            #     }
-            #     return jsonify(access), 200
 
     return jsonify(message="You are not login")
 
@@ -131,7 +75,6 @@ def signup():
     username = request.json.get("username", None)
     password = request.json.get("password", None)
     reppassword = request.json.get("reppassword", None)
-    # picture = request.json.get("file", None)
     function = request.json.get("function", None)
 
     if fullname != None and hospital != None and contacte != None and\
