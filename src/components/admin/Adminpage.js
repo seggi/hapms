@@ -74,22 +74,6 @@ function Adminpage() {
                                         <span>{items.label2}</span>
                                     </Link>
 
-                                    {/* <Link to="/main_single_shop/cashbook" className="menu-btn">
-                                        <label style={{ textAlign: "left" }}>
-                                            <FontAwesomeIcon icon="inbox">
-                                            </FontAwesomeIcon>
-                                        </label>
-                                        <span>{items.label3}</span>
-                                    </Link> */}
-
-                                    {/* <Link to="/main_single_shop/cashbook" className="menu-btn">
-                                        <label style={{ textAlign: "left" }}>
-                                            <FontAwesomeIcon icon="cogs">
-                                            </FontAwesomeIcon>
-                                        </label>
-                                        <span>{items.label4}</span>
-                                    </Link> */}
-
                                 </li>
                             </div>
                         </div>
